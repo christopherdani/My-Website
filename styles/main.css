@@ -1,0 +1,83 @@
+body {
+	background: lightgrey;
+	font-family: arial;
+	padding:0;
+}
+
+
+
+
+
+/*Global classes*/
+.container {
+	margin:auto;
+	width:90%;
+	overflow:auto;
+}
+
+h1 {
+	color: #666;
+	padding:0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+/*Headers*/
+header {
+	min-height: 40px;
+}
+
+header nav ul{
+	float: right;
+}
+
+header nav li {
+	float: left;
+}
+
+header li a {
+	display: inline-block;
+	text-decoration: none;
+	color:grey;
+	text-align: center;
+	padding: 15px 15px;
+}
+
+header li a:hover{
+	color:white;
+	background-color: darkgrey;
+}
+
+header li a:active {
+	color:white;
+	background-color: black;	
+}
+
+header .current a {
+	color:white;
+	background-color: darkgrey;
+}
+
+
+/*Links*/
+#links .link {
+	float: left;
+	height: 15%;
+	width: 15%;
+	padding: 10px;
+	text-align: center;
+	
+}
+
+#links .link img {
+	vertical-align: bottom;
+	position: relative;
+	width: 60px;
+	
+}
