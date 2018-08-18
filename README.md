@@ -1,0 +1,1 @@
+This is a small personal site that I am working on while learning HTML, CSS and JavaScript.

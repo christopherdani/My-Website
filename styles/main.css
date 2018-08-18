@@ -1,11 +1,9 @@
 body {
 	background: lightgrey;
 	font-family: arial;
-	padding:0;
+	padding: 0;
+	margin: 0;
 }
-
-
-
 
 
 /*Global classes*/
@@ -31,6 +29,7 @@ ul {
 /*Headers*/
 header {
 	min-height: 40px;
+	padding: 0.5% 0% 1%;
 }
 
 header nav ul{
@@ -70,14 +69,45 @@ header .current a {
 	float: left;
 	height: 15%;
 	width: 15%;
-	padding: 10px;
+	padding: 50px 10px 10px;
 	text-align: center;
-	
+	vertical-align: text-bottom;
 }
 
-#links .link img {
+/*The LinkedIn logo was floating a little higher than the rest, so this is needed to make it align with the rest*/
+#links .link-linkedIn {
+	float: left;
+	height: 15%;
+	width: 15%;
+	padding: 50px 10px 10px;
+	text-align: center;
+}
+
+#links .link img {	
+	height: auto;
 	vertical-align: bottom;
 	position: relative;
-	width: 60px;
-	
+	width: 70px;
+}
+
+#links .link:hover, #links .link-linkedIn:hover {
+	background-color: darkgrey;
+}
+
+/*Make it responsive so it stacks on top of each other*/
+@media screen and (max-width: 460px){
+	#links .link, #links .link-linkedIn {
+		width: 100%;
+	}
+}
+
+/*Face*/
+#face {
+	padding: 10% 0px;
+	margin: 0px;
+	background-color: cornflowerblue;
+	text-align: center;
+	margin: auto;
+	color: white;
+	font-size: 16;
 }
