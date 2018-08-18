@@ -63,20 +63,32 @@
 		</section>
 
 		<section id="contact">
-			<div class="container">
+			<div class="form-container">
 				<h1>Contact me</h1>
-				<form>
-					<input type="text" placeholder="Your name...">
-					<input name="message" type="text">
-					<button name="send" type="submit" class="button_send">Send</button>
+				<form name="contact" method="POST" netlify>
+					<div class="info-form">
+						<label for="name">Your Name:</label>
+						<input type="text" id="name" name="fullname">
+					</div>
+					<div class="info-form">
+						<label for="email">Your E-mail:</label>
+						<input type="email" id="mail" name="usermail">
+					</div>
+					<div class="info-form">
+						<label for="subject">Subject:</label>
+					</div>
+					<div class="message">
+						<textarea id="msg" name="msg" placeholder="Your message..."></textarea>
+					</div>
+					<div class="button">
+						<button type="submit">Send</button>
+					</div>
 				</form>
 			</div>
 		</section>
-
+		
 		<footer>
-			<div class="container">
-				<h4>Credits</h4>
-			</div>
+			
 		</footer>
 
 
