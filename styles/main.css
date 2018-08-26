@@ -1,5 +1,11 @@
 body {
-	background: lightgrey;
+	/*background: lightgrey;*/
+	background-image: url("/pexels-photo-1332373.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
 	font-family: arial;
 	padding: 0;
 	margin: 0;
@@ -10,7 +16,7 @@ body {
 .container {
 	margin:auto;
 	width:90%;
-	overflow:auto;
+	overflow:auto; 
 }
 
 h1 {
@@ -66,9 +72,10 @@ header .current a {
 
 /*Links*/
 #links .link {
+	box-sizing: border-box;
 	float: left;
 	height: 15%;
-	width: 15%;
+	width: 25%;
 	padding: 50px 10px 10px;
 	text-align: center;
 	vertical-align: text-bottom;
@@ -76,9 +83,10 @@ header .current a {
 
 /*The LinkedIn logo was floating a little higher than the rest, so this is needed to make it align with the rest*/
 #links .link-linkedIn {
+	box-sizing: border-box;
 	float: left;
 	height: 15%;
-	width: 15%;
+	width: 25%;
 	padding: 50px 10px 10px;
 	text-align: center;
 }
@@ -102,10 +110,19 @@ header .current a {
 }
 
 /*Face*/
-#face {
+#face{
 	padding: 10% 0px;
-	margin: 0px;
-	background-color: cornflowerblue;
+	/*
+	Since I'm only using 1 background image, this method is enough.
+	Other methods I've tried that involves background-size: cover/fixed are negatively affecting performance.
+	Maybe I can use JS further down the line to do this frosted glass effect.
+	*/
+	background-image: url("/blurred-face.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: inherit;
+	background-position: center;
+	box-shadow: inset 0 0 0 200px rgba(255,255,255,0.15);
 	text-align: center;
 	margin: auto;
 	color: white;
