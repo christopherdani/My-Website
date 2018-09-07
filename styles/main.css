@@ -1,6 +1,6 @@
 body {
 	/*background: lightgrey;*/
-	background-image: url("/pexels-photo-1332373.jpeg");
+	background-image: url("/background.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -99,7 +99,7 @@ header .current a {
 }
 
 #links .link:hover, #links .link-linkedIn:hover {
-	background-color: darkgrey;
+	background-color: lightgrey;
 }
 
 /*Make it responsive so it stacks on top of each other*/
@@ -117,7 +117,7 @@ header .current a {
 	Other methods I've tried that involves background-size: cover/fixed are negatively affecting performance.
 	Maybe I can use JS further down the line to do this frosted glass effect.
 	*/
-	background-image: url("/blurred-face.jpg");
+	background-image: url("/background_blur.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: inherit;
@@ -131,7 +131,7 @@ header .current a {
 }
 
 
-/*Contact me form*/
+/*Contact me form
 .form-container h1 {
 	padding: 10px 0px 0px;
 }
@@ -170,3 +170,4 @@ button[type=submit] {
 	border-radius: 2px;
 	cursor: pointer;
 }
+*/
